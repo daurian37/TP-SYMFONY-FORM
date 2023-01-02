@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Formulaire !{% endblock %}
+
+{% block body %}
+
+    {# Formulaire de création et de modification #}
+
+    <h1>Création d'un compte étudiant</h1>
+
+    {{ form_start(form) }}
+
+    {{ form_widget(form) }}
+
+    <button type="submit" class="btn btn-success">Enregistrer</button>
+
+    {{ form_end(form) }}
+
+
+{% endblock %}
